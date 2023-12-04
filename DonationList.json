@@ -1,0 +1,37 @@
+// список сборов
+[
+    {
+        "id": 123,
+        "name": "Название сбора",
+        "status": "active", // Статус может быть "active" или "completed"
+        "covers": ["cover1.jpg", "cover2.jpg"],
+        "organization_id": 314,
+        "organization": {
+            "id": 456,
+            "name": "Название организации",
+            "cover": "key_to_s3" // nullable
+        },
+        "requiredFunds": 1000.00,
+        "raisedFunds": 750.50,
+        "countMembers": 50,
+        "report": {
+            "name": "Название отчета",
+            "covers": ["report_cover1.jpg", "report_cover2.jpg"]
+        }, // nullable
+        "isFavorite": true, // Признак избранного: true или false
+        "lastComment": {
+            "id": 123,
+            "comment": "Последний комментарий",
+            "user": {
+                "id": 123,
+                "name": "Mark",
+                "avatar": "key_to_s3" // nullable
+            }
+        }, // nullable
+        "createdAt": "2023-12-04T12:30:00",
+        
+        // для фильтрации
+        "categoryId": 789,
+        "regionId": 101
+    }
+]

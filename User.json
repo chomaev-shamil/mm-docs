@@ -1,0 +1,9 @@
+{
+    "id": 5,
+    "name": "string",
+    "last_name": "string",
+    "avatar": "key_to_s3",
+    "phone": "string",
+    "email": "string", // nullable
+    "donatedFunds": 3432
+}

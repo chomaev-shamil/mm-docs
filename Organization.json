@@ -1,0 +1,39 @@
+{
+    "id": 314,
+    "name": "Название организации",
+    "subTitle": "Подзаголовок",
+    "cover": "key_to_s3", // nullable
+    "region": { 
+        "id": 456,
+        "name": "Название региона"
+    }, // nullable // RegionModel // Если региона нет, то он Международный *мб изменим
+    "about": {
+        "description": "Описание", // nullable
+        "documents": [
+            {
+                "id": 789,
+                "name": "Название документа",
+                "fileKey": "ключ_файла",
+                "type": "Тип_документа" // или расширение, нужно для иконок
+            } // DocumentListModel
+        ],
+        "contact": {
+            "phone": "string",
+            "email": "string",
+            "address": "string"
+        }, // nullable
+        "countSubscribers": 100, // 0
+        "countActiveDonations": 10, // 0
+        "countCompletedDonations": 20, // 0
+        "countCompletedWithReportDonations": 5, // 0
+    },
+    "subscription": {
+        "name": "Название подписки",
+        "isActive": true, // доступна ли для подписки
+        "amount": 9.99
+    }, // nullable, информация об рекоммендуемой подписки (для тек. фонда)
+    "user_subscription": {
+        "amount": 9.99,
+        "created_at": "iso_date"
+    } // nullable, информация об активной подписки пользователя
+}
