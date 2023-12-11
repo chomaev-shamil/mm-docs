@@ -27,12 +27,12 @@
         "countCompletedDonations": 20, // 0
         "countCompletedWithReportDonations": 5, // 0
     },
-    "subscription": {
+    "recommended_subscription": {
         "name": "Название подписки",
         "isActive": true, // доступна ли для подписки
         "amount": 9.99
     }, // nullable, информация об рекоммендуемой подписки (для тек. фонда)
-    "user_subscription": {
+    "user_active_subscription": {
         "amount": 9.99,
         "created_at": "iso_date"
     } // nullable, информация об активной подписки пользователя
