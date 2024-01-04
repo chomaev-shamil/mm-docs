@@ -4,7 +4,7 @@
 - ``/auth (obtain, etc..)``
 
 #### Donations
-- ``/donations ?region_id, category_id, organization_id, status, is_report != null, is_favorite, name (поиск по названиям)``
+- ``/donations ?region_id, category_id, organization_id, status, has_report != null, is_favorite, name (поиск по названиям)``
 - ``/donations/:id``
 - ``/donations/:id/report [.post]``
 - ``/donations/:id/donate [.post > (type: one-time, amount: 314)]``
